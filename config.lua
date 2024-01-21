@@ -76,6 +76,42 @@ PIK.Translate = {
     doYouAgreeDelete = "DO YOU WANT TO DELETE THE CHARACTER ?",
 }
 
+-- IDIOMA (ES) | ESPAÑOL
+PIK.Translate = {
+    title = "PIK",
+    character = "Personajes",
+    selector = "Seleccion",
+    firstDesc = "",
+    createCharacter = "Crear Personajer",
+    buySlot = "COMPRAR SLOT",
+    play = "JUGAR",
+    delete = "ELIMINAR",
+    male = "HOMBRE",
+    female = "MUJER",
+    dateOfBirth = "FECHA DE NACIMIENTO",
+    nationality = "NACIONALIDAD",
+    job = "TRABAJO",
+    cash = "EFECTIVO",
+    bank = "BANCO",
+    phoneNumber = "NUMERO DE TELEFONO",
+    accountNumber = "IBAN",
+    rightTitle1 = "CREAR",
+    rightTitle2 = "PERSONAJE",
+    rightDescription = "¡Crea un personaje! Rellena el formulario para empezar a jugar",
+    name = "NOMBRE",
+    surname = "APELLIDO",
+    create = "CREAR",
+    slot = "SLOT",
+    redeemCode = "CANJEAR CODIGO",
+    buyCode = "BUY CODE",
+    cancel = "CANCELAR",
+    accept = "ACEPTAR",
+    characterInfo = "INFORMACION DEL PERSONAJE",
+    loading = "CARGANDO!",
+    plsWait = "PORFAVOR ESPERA...",  
+    doYouAgreeDelete = "QUIERES ELIMINAR EL PERSONAJE ?",
+}
+
 PIK.MaxCharSlot = 2
 PIK.DefaultOpenCharSlot = 1
 
