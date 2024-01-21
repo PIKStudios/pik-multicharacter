@@ -1,0 +1,397 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="loadingSection">
+            <div class="loadingCharInfoArea">
+                <div class="loadingPPArea">
+                    <img src="./images/pp.png" alt="" />
+                </div>
+                <div class="loadingCharName">PIK</div>
+            </div>
+
+            <div class="loadingBar">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="charInformationText">
+                <div class="charInfoText">KARAKTER BILGILERI</div>
+                <div class="loadingText">YÜKLENİYOR!</div>
+            </div>
+
+            <div class="loadingBottomArea">
+                <i id="infoIcon" class="fa-solid fa-circle-info"></i>
+                <div class="pleaseWaitText">Oyuncu verilerinin aktarılmasını bekleyin lütfen... </div>
+            </div>
+        </div>
+        <div class="slotRedeemSection">
+            <div class="slotRedeemMain">
+                <div class="redeemTitleArea">
+                    <span class="slotText">SLOT</span>
+                    <span class="redeemCodeText">REDEEM CODE</span>
+                    <span id="buyCodeButton">BUY CODE</span>
+                </div>
+                <input
+                    type="text"
+                    class="redeemInput"
+                    name=""
+                    id=""
+                    value="REDEEM CODE..."
+                    onblur="if(this.value == '') { this.value='REDEEM CODE...'}"
+                    onfocus="if (this.value == 'REDEEM CODE...') {this.value=''}"
+                />
+                <div class="redeemButtonArea">
+                    <div class="redeemButton" id="redeemCancel">CANCEL</div>
+                    <div class="redeemButton" id="redeemAccept">ACCEPT</div>
+                </div>
+            </div>
+        </div>
+        <div class="agreeDeleteSection">
+            <div class="agreeSection">
+                <div class="doYouAgreeText">
+                    <span class="agreeText"> DO YOU AGREE TO DELETE THE CHARACTER NAMED </span>
+                    <span class="charNameAgreeText">BRENDEN RANDALL?</span>
+                </div>
+                <div class="agreeButtonAreas">
+                    <div class="agreeButton" id="agreeCancelButton">CANCEL</div>
+                    <div class="agreeButton" id="agreeDeleteButton">DELETE</div>
+                </div>
+            </div>
+        </div>
+        <div class="generalSection">
+            <div class="bgEffect"></div>
+            <div class="leftWrapper">
+                <div class="titleArea">
+                    <div class="titleSvName">PIK</div>
+                    <div class="charSelectorTitle">
+                        <span class="chrSelector1">CHARACTER</span>
+                        <span class="chrSelector2">SELECTOR</span>
+                    </div>
+                </div>
+                <div class="titleRectangle"></div>
+                <div class="leftDescription">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas semper venenatis faucibus cras eleifend.
+                </div>
+                <div class="charList">
+                    <div class="charListLeftArea">
+                        <div class="rectangleItem">
+                            <div class="leftText">1</div>
+                            <div class="rightRectangle"></div>
+                            <div class="bottomRectangle"></div>
+                        </div>
+                        <div class="rectangleItem">
+                            <div class="leftText">2</div>
+                            <div class="rightRectangle"></div>
+                            <div class="bottomRectangle"></div>
+                        </div>
+                        <div class="rectangleItem">
+                            <div class="leftText empty">3</div>
+                            <div class="rightRectangle"></div>
+                            <div class="bottomRectangle"></div>
+                        </div>
+                        <div class="rectangleItem">
+                            <div class="leftText empty">4</div>
+                            <div class="rightRectangle"></div>
+                            <div class="bottomRectangle"></div>
+                        </div>
+                        <div class="rectangleItem">
+                            <div class="leftText empty">5</div>
+                            <div class="rightRectangle"></div>
+                            <div class="bottomRectangle"></div>
+                        </div>
+                        <div class="rectangleItem">
+                            <div class="leftText empty">6</div>
+                            <div class="rightRectangle"></div>
+                            <!-- <div class="bottomRectangle"></div> -->
+                        </div>
+                    </div>
+                    <div class="charListRightArea">
+                        <div class="charItem">
+                            <div class="charItemSexArea male">MALE</div>
+                            <div class="charItemAgeText">
+                                <span class="age">28</span>
+                                <span>AGE</span>
+                            </div>
+                            <div class="charItemNameArea">
+                                <span class="firstName">BRENDEN</span>
+                                <span class="lastName">RANDALL</span>
+                            </div>
+                            <div class="charItemArrowArea">
+                                <img src="./images/arrow.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="charItem active">
+                            <div class="charItemSexArea female">FEMALE</div>
+                            <div class="charItemAgeText active">
+                                <span class="age">28</span>
+                                <span>AGE</span>
+                            </div>
+                            <div class="charItemNameArea active">
+                                <span class="firstName">BRENDEN</span>
+                                <span class="lastName">RANDALL</span>
+                            </div>
+                            <div class="charItemArrowArea">
+                                <img src="./images/arrow.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="charItem create" id="createButton">
+                            <div class="charCreateImgArea">
+                                <img src="./images/create.png" alt="" />
+                            </div>
+                            <div class="createCharText">CREATE CHARACTER</div>
+                        </div>
+                        <div class="charItem locked" id="locked">
+                            <div class="charCreateImgArea">
+                                <img src="./images/lock.png" alt="" />
+                            </div>
+                            <div class="createCharText">BUY SLOT</div>
+                        </div>
+                        <div class="charItem locked" id="locked">
+                            <div class="charCreateImgArea">
+                                <img src="./images/lock.png" alt="" />
+                            </div>
+                            <div class="createCharText">BUY SLOT</div>
+                        </div>
+                        <div class="charItem locked" id="locked">
+                            <div class="charCreateImgArea">
+                                <img src="./images/lock.png" alt="" />
+                            </div>
+                            <div class="createCharText">BUY SLOT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttonAreas">
+                    <div class="buttonItem" id="clickableDelete">
+                        <img src="./images/delete.png" alt="" />
+                        <div class="inButtonText" id="deleteButton">DELETE</div>
+                    </div>
+                    <div class="buttonItem" id="clickablePlay">
+                        <img src="./images/play.png" alt="" />
+                        <div class="inButtonText" id="playButton">PLAY</div>
+                    </div>
+                </div>
+            </div>
+            <div class="charInfoRight">
+                <div class="rightSexText female">FEMALE</div>
+                <div class="rightCharName">BRENDEN RANDALL</div>
+                <div class="rightItemArea">
+                    <div class="rightItemLeftArea">
+                        <div class="rightInfoItem">
+                            <div class="rightInfoText" id="dob">DATE OF BIRTH</div>
+                            <div class="rightInfo" id="dateInfo">01 - 01 - 1999</div>
+                        </div>
+                        <div class="rightInfoItem">
+                            <div class="rightInfoText" id="natinTE">UYRUK</div>
+                            <div class="rightInfo" id="natinInfo">KÜRT</div>
+                        </div>
+                        <div class="rightInfoItem">
+                            <div class="rightInfoText" id="jobTe">JOB</div>
+                            <div class="rightInfo" id="jobInfo">AMELE</div>
+                        </div>
+                        <div class="rightInfoItem">
+                            <div class="rightInfoText" id="cashT">CASH</div>
+                            <div class="rightInfo" id="cashInfo">$513.461</div>
+                        </div>
+                        <div class="rightInfoItem">
+                            <div class="rightInfoText" id="bankT">BANK</div>
+                            <div class="rightInfo" id="bankInfo">$215.706.379</div>
+                        </div>
+                        <div class="rightInfoItem">
+                            <div class="rightInfoText" id="phnNmT">PHONE NUMBER</div>
+                            <div class="rightInfo" id="phoneInfo">08538578562</div>
+                        </div>
+                        <div class="rightInfoItem">
+                            <div class="rightInfoText" id="accNm">ACCOUNT NUMBER</div>
+                            <div class="rightInfo" id="citizenIdInfo">7345ESDB436Y4NDGSB4</div>
+                        </div>
+                    </div>
+                    <div class="rightItemRightArea">
+                        <div class="charInfoRectangleItem">
+                            <div class="rightText">1</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightBottomRectangle"></div>
+                        </div>
+                        <div class="charInfoRectangleItem">
+                            <div class="rightText">2</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightBottomRectangle"></div>
+                        </div>
+                        <div class="charInfoRectangleItem">
+                            <div class="rightText">3</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightBottomRectangle"></div>
+                        </div>
+                        <div class="charInfoRectangleItem">
+                            <div class="rightText">4</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightBottomRectangle"></div>
+                        </div>
+                        <div class="charInfoRectangleItem">
+                            <div class="rightText">5</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightBottomRectangle"></div>
+                        </div>
+                        <div class="charInfoRectangleItem">
+                            <div class="rightText">6</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightBottomRectangle"></div>
+                        </div>
+                        <div class="charInfoRectangleItem">
+                            <div class="rightText">6</div>
+                            <div class="leftRectangle"></div>
+                            <!-- <div class="rightBottomRectangle"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="charCreateRight">
+                <div class="characterText">CHARACTER</div>
+                <div class="creatorText">CREATOR</div>
+                <div class="rightCreatorRectangle"></div>
+                <div class="creatorDescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquam mollitia enim velit exercitationem, quae porro harum
+                    voluptates at dolore.
+                </div>
+                <div class="creatorRightItemArea">
+                    <div class="creatorItemLeftArea">
+                        <div class="sexArea">
+                            <div class="sexButton active" data-sex="male">
+                                <i id="sexIconActive" class="fa-solid fa-mars"></i>
+                                <div class="sexText active" id="maleTx">MALE</div>
+                            </div>
+                            <div class="sexButton" data-sex="female">
+                                <i id="sexIcon" class="fa-solid fa-venus"></i>
+                                <div class="sexText" id="femaleTx">FEMALE</div>
+                            </div>
+                        </div>
+                        <div class="firstNameArea">
+                            <span class="inputTitle" id="nmTx">NAME</span>
+                            <span class="inputDesc">( MAX CHARACTER 15 )</span>
+                            <input
+                                type="text"
+                                class="customInput"
+                                name=""
+                                id="firstname"
+                                value="BRANDEN"
+                                onblur="if(this.value == '') { this.value='BRANDEN'}"
+                                onfocus="if (this.value == 'BRANDEN') {this.value=''}"
+                            />
+                        </div>
+                        <div class="lastNameArea">
+                            <span class="inputTitle" id="srnTx">SURNAME</span>
+                            <span class="inputDesc">( MAX CHARACTER 15 )</span>
+                            <input
+                                type="text"
+                                class="customInput"
+                                name=""
+                                id="lastname"
+                                value="WILL"
+                                onblur="if(this.value == '') { this.value='WILL'}"
+                                onfocus="if (this.value == 'WILL') {this.value=''}"
+                            />
+                        </div>
+                        <div class="nationalityArea">
+                            <span class="inputTitle" id="ntnTx">NATIONALITY</span>
+                            <span class="inputDesc">( MAX CHARACTER 15 )</span>
+                            <input
+                                type="text"
+                                class="customInput"
+                                name=""
+                                id="nationality"
+                                value="POLISH"
+                                onblur="if(this.value == '') { this.value='POLISH'}"
+                                onfocus="if (this.value == 'POLISH') {this.value=''}"
+                            />
+                        </div>
+                        <div class="dateOfBirthArea">
+                            <div class="rightSolidText" id="dobTx">DATE OF BIRTH</div>
+                            <input type="date" class="" name="" id="datepicker" min="1960-01-01" max="2023-12-31" />
+                        </div>
+                        <!-- <div class="heightArea">
+                            <div class="rightSolidText">HEIHGT</div>
+                            <input
+                                type="text"
+                                class=""
+                                name=""
+                                id="heightInput"
+                                value="CM"
+                                onblur="if(this.value == '') { this.value='CM'}"
+                                onfocus="if (this.value == 'CM') {this.value=''}"
+                            />
+                        </div> -->
+                        <div class="rightButtonAreas">
+                            <!-- <div class="rightButtonItem">
+                                <img src="./images/delete.png" alt="" />
+                                <div class="rightInButtonText" id="cancelButton">CANCEL</div>
+                            </div> -->
+                            <div class="rightButtonItem">
+                                <img src="./images/play.png" alt="" />
+                                <div class="rightInButtonText" id="createButtonX">CREATE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creatorItemRightArea">
+                        <div class="rightRectangleItem">
+                            <div class="rightText">1</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightCreatorBottomRectangle"></div>
+                        </div>
+                        <div class="rightRectangleItem">
+                            <div class="rightText">2</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightCreatorBottomRectangle second"></div>
+                        </div>
+                        <div class="rightRectangleItem third">
+                            <div class="rightText">3</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightCreatorBottomRectangle third"></div>
+                        </div>
+                        <div class="rightRectangleItem four">
+                            <div class="rightText">4</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightCreatorBottomRectangle five"></div>
+                        </div>
+                        <!-- <div class="rightRectangleItem">
+                            <div class="rightText">5</div>
+                            <div class="leftRectangle"></div>
+                            <div class="rightCreatorBottomRectangle"></div>
+                        </div> -->
+                        <div class="rightRectangleItem">
+                            <div class="rightText">5</div>
+                            <div class="leftRectangle"></div>
+                            <!-- <div class="rightBottomRectangle"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/profanity.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1170 @@
+@font-face {
+    font-family: "Oswald";
+    src: url("../font/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Oswald Light";
+    src: url("../font/Oswald-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Oswald Bold";
+    src: url("../font/Oswald-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nature";
+    src: url("../font/Nature.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-Bold.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #b414dc;
+}
+
+html,
+body {
+    /* z-index: 999; */
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.generalSection {
+    /* display: flex; */
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    /* background-image: url("/html/images/bg.png"); */
+
+    justify-content: space-between;
+}
+
+.bgEffect {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/html/images/bgEffect.png");
+}
+
+.leftWrapper {
+    position: relative;
+    z-index: 987;
+    /* background-color: rgba(0, 0, 255, 0.041); */
+    width: 28%;
+}
+
+.charInfoRight {
+    display: none;
+    /* left: 30vw; */
+    position: relative;
+    z-index: 987;
+    /* background-color: blue; */
+    width: 30%;
+}
+
+.titleArea {
+    /* background-color: red; */
+    width: 75%;
+    /* height: 10%; */
+    margin-left: 25%;
+    margin-top: 5.87vw;
+    display: flex;
+}
+
+.titleSvName {
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+
+    font-family: "Oswald";
+    /* background-color: green; */
+    font-size: 3.5vw;
+    color: #ffffff;
+}
+
+.charSelectorTitle {
+    margin-top: 1.7vw;
+    margin-left: 2vw;
+    background: #b414dc;
+    height: fit-content;
+    color: rgba(0, 0, 0, 0.53);
+    padding: 2% 4% 2% 4%;
+    border: 2.20513px solid rgba(0, 0, 0, 0.24);
+    font-size: 0.8vw;
+    font-family: Oswald Bold;
+}
+
+.chrSelector2 {
+    font-family: Oswald;
+}
+
+.titleRectangle {
+    width: 17.85vw;
+    height: 0.1vw;
+    margin-left: 25%;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.leftDescription {
+    font-family: "Oswald Light";
+    color: rgba(255, 255, 255, 0.37);
+    width: 60%;
+    font-size: 0.85vw;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+
+.charList {
+    /* background-color: red; */
+    /* width: 85%; */
+    margin-left: 10%;
+    height: 28vw;
+    margin-top: 2vw;
+    display: flex;
+    padding-top: 0.3vw;
+    /* padding-right: -20%; */
+    overflow-x: auto;
+}
+
+.rightItemArea {
+    /* background-color: red; */
+    margin-left: 10%;
+    height: 38vw;
+    /* margin-top: 0.5vw; */
+    display: flex;
+    /* padding-top: 0.3vw; */
+}
+
+.rightItemRightArea {
+    /* background-color: green; */
+    width: 15%;
+    text-align: center;
+    /* height: 70.35vw; */
+    /* height: fit-content; */
+    /* height: 99999%; */
+}
+
+.charListLeftArea {
+    /* background-color: red; */
+    width: 15%;
+    text-align: center;
+    /* height: 70.35vw; */
+    /* height: fit-content; */
+    /* height: 99999%; */
+}
+
+.rightRectangleItem {
+    position: relative;
+}
+
+.rightRectangleItem:not(:first-child) {
+    margin-top: -3.5vw;
+}
+
+.charInfoRectangleItem {
+    position: relative;
+}
+
+.charInfoRectangleItem:not(:first-child) {
+    margin-top: -3.5vw;
+}
+
+/* .rightRectangleItem.third {
+    margin-top: -2vw;
+} */
+
+.rightRectangle {
+    position: relative;
+    top: -0.6667vw;
+    left: 1vw;
+    background-color: rgba(255, 255, 255, 0.26);
+    width: 2vw;
+    height: 2px;
+}
+
+.leftRectangle {
+    position: relative;
+    top: -0.6667vw;
+    left: 0.1vw;
+    background-color: rgba(255, 255, 255, 0.26);
+    width: 2vw;
+    height: 2px;
+}
+
+.rectangleItem {
+    position: relative;
+}
+
+.rectangleItem:not(:first-child) {
+    margin-top: -2.8vw;
+}
+
+.bottomRectangle {
+    background-color: rgba(255, 255, 255, 0.26);
+    position: relative;
+    width: 2px;
+    height: 6.5vw;
+    top: -0.2vw;
+    left: 0.42vw;
+}
+
+.rightBottomRectangle {
+    background-color: rgba(255, 255, 255, 0.26);
+    position: relative;
+    width: 2px;
+    height: 5.4vw;
+    top: -0.75vw;
+    left: 2.35vw;
+}
+
+.rightCreatorBottomRectangle {
+    background-color: rgba(255, 255, 255, 0.26);
+    position: relative;
+    width: 2px;
+    height: 4.5vw;
+    top: -0.75vw;
+    left: 2.35vw;
+}
+
+.rightCreatorBottomRectangle.second {
+    height: 5.3vw;
+}
+
+.rightCreatorBottomRectangle.third {
+    height: 5vw;
+}
+
+.rightCreatorBottomRectangle.five {
+    height: 4.5vw;
+}
+
+.leftText {
+    position: relative;
+    z-index: 987;
+    font-weight: 700;
+    background: #de5bff;
+    width: 1vw;
+    height: 1.2vw;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-family: Oswald;
+    font-size: 0.7vw;
+    /* margin-top: 4.5vw; */
+}
+
+.rightText {
+    position: relative;
+    z-index: 987;
+    font-weight: 700;
+    background: #de5bff;
+    left: 1.9vw;
+    width: 1vw;
+    height: 1.2vw;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-family: Oswald;
+    font-size: 0.7vw;
+    /* margin-top: 4.5vw; */
+}
+
+.rightText:first-child {
+    margin-top: 2.2vw;
+}
+
+.leftText.empty {
+    background: #b4b4b4;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.leftText:first-child {
+    margin-top: 2.2vw;
+}
+
+.charListRightArea {
+    /* background-color: blue; */
+    width: 79%;
+}
+
+.rightItemLeftArea {
+    /* background-color: blue; */
+    width: 73%;
+}
+
+.charItem {
+    position: relative;
+    cursor: pointer;
+    /* margin-left: 18%; */
+    background: radial-gradient(100% 1457.85% at 0% 50%, rgba(255, 195, 76, 0.2) 0%, rgba(255, 195, 76, 0) 100%), rgba(217, 217, 217, 0.21);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    height: 5.5vw;
+}
+
+.charItem.create {
+    background: rgba(217, 217, 217, 0.21);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.charItem.locked {
+    background: linear-gradient(0deg, rgba(131, 231, 135, 0.06), rgba(131, 231, 135, 0.06)), rgba(217, 217, 217, 0.21);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.charItem:hover {
+    background: radial-gradient(100% 1457.85% at 0% 50%, #ff00ee30 0%, #ff00ee30 100%), rgba(217, 217, 217, 0.21);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.charItem.active {
+    color: rgba(0, 0, 0, 0.56);
+    background: #d70de9;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0px 0px 33px rgba(221, 0, 255, 0.39);
+}
+
+.charItem:not(:last-child) {
+    margin-bottom: 1.7vw;
+}
+
+.charItemAgeText {
+    /* position: relative; */
+    margin-left: 8%;
+    margin-top: 7%;
+    font-family: Oswald Light;
+    font-size: 0.75vw;
+    /* font-weight: 400; */
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.charItemAgeText.active {
+    color: rgba(0, 0, 0, 0.51);
+}
+
+.charItemNameArea.active {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.charItemNameArea {
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    margin-left: 8%;
+    margin-top: -2%;
+    font-size: 1.3vw;
+    /* font-weight: 00; */
+    font-family: "Oswald Light";
+    color: #ffffff;
+}
+
+.firstName {
+    text-transform: uppercase;
+    font-weight: 600;
+    /* font-family: Oswald; */
+}
+
+.charItemSexArea {
+    text-transform: uppercase;
+    position: absolute;
+    font-family: "Oswald";
+    font-weight: 600;
+    font-size: 0.65vw;
+    width: fit-content;
+    text-align: center;
+    width: 4vw;
+    /* padding: 0.2% 5.5% 0.3% 5.5%; */
+    margin-left: 5%;
+    margin-top: -2.2%;
+    color: rgba(0, 0, 0, 0.47);
+}
+
+.charItemSexArea.male {
+    background: #d7e4ff;
+}
+
+.charItemSexArea.female {
+    background: #ffd7fb;
+}
+
+.charCreateImgArea {
+    width: 2.1vw;
+    margin-left: 8.8vw;
+    margin-top: 1vw;
+    height: 2.1vw;
+    /* background-color: red; */
+}
+
+.charCreateImgArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.createCharText {
+    text-align: center;
+    margin-top: 0.1vw;
+    font-family: "Oswald Light";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 2vw;
+    color: rgba(255, 255, 255, 0.52);
+}
+
+.buttonAreas {
+    margin-top: 1vw;
+    width: 19.8vw;
+    height: 3.5vw;
+    display: flex;
+    margin-left: 23.5%;
+    gap: 0.5vw;
+}
+
+.buttonItem {
+    cursor: pointer;
+    position: relative;
+    width: 9.85vw;
+}
+
+.buttonItem img {
+    width: 100%;
+    height: 100%;
+}
+
+.inButtonText {
+    font-family: "Oswald";
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.53);
+    font-size: 1.5vw;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(98, 237, 128, 0) -51.3%, rgba(98, 237, 128, 0.74) 100%), #6a6a6a;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 67px rgba(104, 242, 133, 0.52);
+    top: 0.35vw;
+    left: 0.3vw;
+    width: 9vw;
+    height: 2.85vw;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+    line-height: 2.8vw;
+    transition-property: all;
+    transition-duration: 0.15s;
+}
+
+.buttonItem:hover > .inButtonText {
+    top: 0vw;
+    left: 0vw;
+    width: 9.6vw;
+    height: 3.55vw;
+    line-height: 3.55vw;
+}
+
+#deleteButton {
+    background: linear-gradient(180deg, rgba(252, 132, 132, 0) -51.3%, rgba(252, 132, 132, 0.74) 100%), #6a6a6a;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 67px rgba(242, 104, 104, 0.52);
+}
+
+.charItemArrowArea {
+    height: 1.5vw;
+    width: 1.5vw;
+    position: absolute;
+    top: 2vw;
+    left: 16.2vw;
+}
+.charItemArrowArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rightSexText {
+    font-size: 1vw;
+    /* height: 1.1vw; */
+    margin-top: 6.6vw;
+    margin-left: 17vw;
+    width: 5vw;
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.47);
+}
+
+.rightSexText.male {
+    background: #d7e4ff;
+}
+
+.rightSexText.female {
+    background: #ffd7fb;
+}
+
+.rightCharName {
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    /* background-color: red; */
+    width: 22vw;
+    text-align: right;
+    font-family: "Oswald";
+    color: #ffffff;
+    font-size: 2vw;
+}
+
+.rightInfoItem {
+    width: 19vw;
+    height: 4.55vw;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    margin-top: 0.8vw;
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+    background: radial-gradient(100% 1457.85% at 0% 50%, rgba(255, 195, 76, 0) 0%, rgba(255, 195, 76, 0.1) 100%), rgba(217, 217, 217, 0.15);
+}
+
+.rightInfoText {
+    font-family: "Oswald Light";
+    text-align: end;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.52);
+    /* background-color: red; */
+    width: 18vw;
+    font-size: 0.75vw;
+    margin-top: 0.7vw;
+}
+
+.rightInfo {
+    width: 18vw;
+    /* font-weight: 400; */
+    font-family: "Oswald";
+    text-align: right;
+    font-size: 1.25vw;
+    color: #ffffff;
+}
+
+.charCreateRight {
+    display: none;
+    width: 31%;
+    position: relative;
+    z-index: 987;
+}
+
+.characterText {
+    /* background-color: red; */
+    width: 23vw;
+    margin-top: 5.4vw;
+    font-family: "Oswald";
+    font-weight: 200;
+    color: #f04cff;
+    text-align: right;
+    font-size: 2.3vw;
+    /* margin-right: 5vw; */
+}
+
+.creatorText {
+    width: 23vw;
+    /* background-color: red; */
+    font-family: "Oswald Light";
+    font-weight: 400;
+    color: #f04cff;
+    text-align: right;
+    font-size: 2.3vw;
+    margin-top: -0.7vw;
+    margin-right: 5vw;
+    color: white;
+}
+
+.rightCreatorRectangle {
+    height: 0.1vw;
+    width: 15.2vw;
+    margin-left: 8vw;
+    margin-top: 0.4vw;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.creatorDescription {
+    font-size: 0.8vw;
+    text-align: end;
+    /* background-color: red; */
+    width: 16.3vw;
+    margin-left: 7vw;
+    margin-top: 0.5vw;
+    font-family: "Oswald Light";
+    color: rgba(255, 255, 255, 0.42);
+}
+
+.creatorRightItemArea {
+    margin-top: 0.2vw;
+    /* background-color: red; */
+    margin-left: 10%;
+    height: 38vw;
+    /* margin-top: 0.5vw; */
+    display: flex;
+    /* padding-top: 0.3vw; */
+}
+
+.creatorItemLeftArea {
+    /* background-color: blue; */
+    width: 75.5%;
+}
+
+.creatorItemRightArea {
+    margin-left: 0.3vw;
+    /* background-color: green; */
+    width: 16%;
+    text-align: center;
+    /* height: 70.35vw; */
+    /* height: fit-content; */
+    /* height: 99999%; */
+}
+
+.sexArea {
+    display: flex;
+    margin-top: 1vw;
+    width: 17.5vw;
+    margin-left: 3vw;
+    height: 3.35vw;
+    /* gap: 0.1vw; */
+    background: linear-gradient(0deg, rgba(255, 195, 76, 0) -20%, rgba(255, 195, 76, 0.134) 100%), rgba(217, 217, 217, 0.15);
+}
+
+.sexButton {
+    cursor: pointer;
+    display: flex;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    width: 7.98vw;
+    height: 2.3vw;
+    background: rgba(0, 0, 0, 0.51);
+    color: rgba(255, 255, 255, 0.69);
+}
+
+.sexButton.active {
+    background: #b414dc;
+    color: #000;
+}
+
+#sexIcon {
+    /* text-align: center; */
+    margin-left: 2vw;
+    font-size: 1vw;
+    margin-top: 0.6vw;
+}
+
+#sexIconActive {
+    /* text-align: center; */
+    margin-left: 1.85vw;
+    font-size: 1vw;
+    margin-top: 0.6vw;
+}
+
+.sexText {
+    font-family: Oswald;
+    margin-top: 0.4vw;
+    margin-left: 0.6vw;
+    font-size: 0.9vw;
+    color: rgba(255, 255, 255, 0.51);
+}
+
+.sexText.active {
+    color: black;
+}
+
+.firstNameArea {
+    margin-top: 0.7vw;
+    height: 4.5vw;
+    width: 17.5vw;
+    margin-left: 3vw;
+    background: radial-gradient(100% 1457.85% at 0% 50%, rgba(255, 195, 76, 0) 0%, rgba(255, 195, 76, 0.2) 100%), rgba(217, 217, 217, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.138);
+}
+
+.nationalityArea {
+    margin-top: 0.7vw;
+    height: 4.5vw;
+    width: 17.5vw;
+    margin-left: 3vw;
+    background: radial-gradient(100% 1457.85% at 0% 50%, rgba(255, 195, 76, 0) 0%, rgba(255, 195, 76, 0.2) 100%), rgba(217, 217, 217, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.138);
+}
+
+.lastNameArea {
+    margin-top: 0.7vw;
+    height: 4.5vw;
+    width: 17.5vw;
+    margin-left: 3vw;
+    background: radial-gradient(100% 1457.85% at 0% 50%, rgba(255, 195, 76, 0) 0%, rgba(255, 195, 76, 0.2) 100%), rgba(217, 217, 217, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.138);
+}
+
+.inputTitle {
+    position: relative;
+    top: 0.6vw;
+    /* background-color: red; */
+    font-size: 0.9vw;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: "Oswald Light";
+    margin-left: 0.7vw;
+    /* line-height: 2vw; */
+    /* margin-top: 1vw; */
+}
+
+.inputDesc {
+    position: relative;
+    top: 0.52vw;
+    font-size: 0.7vw;
+    color: rgba(255, 255, 255, 0.386);
+    font-family: "Oswald Light";
+}
+
+.customInput {
+    margin-left: 0.6vw;
+    margin-top: 0.3vw;
+    height: 2vw;
+    width: 16vw;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: Oswald;
+    color: white;
+    font-size: 1.3vw;
+    text-transform: capitalize;
+}
+
+.dateOfBirthArea {
+    display: flex;
+    margin-top: 0.7vw;
+    height: 3.5vw;
+    width: 17.5vw;
+    margin-left: 3vw;
+    background: radial-gradient(100% 1457.85% at 0% 50%, rgba(255, 195, 76, 0) 0%, rgba(255, 195, 76, 0.2) 100%), rgba(217, 217, 217, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.138);
+}
+
+.heightArea {
+    display: flex;
+    margin-top: 0.7vw;
+    height: 3.5vw;
+    width: 17.5vw;
+    margin-left: 3vw;
+    background: radial-gradient(100% 1457.85% at 0% 50%, rgba(255, 195, 76, 0) 0%, rgba(255, 195, 76, 0.2) 100%), rgba(217, 217, 217, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.138);
+}
+
+.rightSolidText {
+    color: white;
+    font-size: 1vw;
+    font-family: Oswald;
+    margin-left: 0.65vw;
+    margin-top: 0.95vw;
+}
+
+.rightButtonAreas {
+    display: flex;
+    gap: 0.5vw;
+    margin-left: 3vw;
+    margin-top: 0.7vw;
+    height: 3.55vw;
+    width: 19.6vw;
+}
+
+.rightButtonItem {
+    cursor: pointer;
+    position: relative;
+    width: 17.5vw;
+}
+
+.rightButtonItem img {
+    width: 100%;
+    height: 100%;
+}
+
+.rightInButtonText {
+    font-family: "Oswald";
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.53);
+    font-size: 1.5vw;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(98, 237, 128, 0) -51.3%, rgba(98, 237, 128, 0.74) 100%), #6a6a6a;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 67px rgba(104, 242, 133, 0.52);
+    top: 0.35vw;
+    left: 0.35vw;
+    width: 16.75vw;
+    height: 2.85vw;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+    line-height: 2.8vw;
+    transition-property: all;
+    transition-duration: 0.15s;
+}
+
+.rightButtonItem:hover > .rightInButtonText {
+    top: 0vw;
+    left: 0vw;
+    width: 17.5vw;
+    height: 3.55vw;
+    line-height: 3.55vw;
+}
+
+#cancelButton {
+    background: linear-gradient(180deg, rgba(252, 132, 132, 0) -51.3%, rgba(252, 132, 132, 0.74) 100%), #6a6a6a;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 67px rgba(242, 104, 104, 0.52);
+}
+
+#datepicker {
+    padding-right: 0.5vw;
+    margin-top: 0.7vw;
+    margin-left: 1vw;
+    background: rgba(0, 0, 0, 0.53);
+    text-align: center;
+    border: 1.14474px solid rgba(255, 255, 255, 0.19);
+    height: 2vw;
+    width: 9.5vw;
+    font-family: "Oswald";
+    font-size: 0.7vw;
+    text-transform: uppercase;
+    outline: none;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+#heightInput {
+    background: rgba(0, 0, 0, 0.53);
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 0.7vw;
+    text-transform: uppercase;
+    outline: none;
+    color: rgba(255, 255, 255, 0.65);
+    border: 1.14474px solid rgba(255, 255, 255, 0.19);
+
+    margin-top: 0.7vw;
+    margin-left: 3.75vw;
+    height: 2vw;
+    width: 9.5vw;
+}
+
+.agreeDeleteSection {
+    display: none;
+    position: absolute;
+    z-index: 987777;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.53);
+}
+
+.agreeSection {
+    /* display: flex; */
+    position: absolute;
+    height: 13vw;
+    width: 30vw;
+    top: 50%;
+    left: 50%;
+    margin-left: -15%;
+    margin-top: -10%;
+    background: linear-gradient(180deg, rgba(249, 98, 98, 0.38) 0%, rgba(243, 129, 129, 0) 122.7%, rgba(239, 87, 87, 0) 122.7%),
+        rgba(51, 51, 51, 0.39);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(19px);
+}
+
+.doYouAgreeText {
+    font-family: Oswald Light;
+    font-size: 1.6vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 2vw;
+    /* background-color: red; */
+    height: fit-content;
+    text-align: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.71);
+}
+
+.charNameAgreeText {
+    color: #e56060;
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+
+.agreeButtonAreas {
+    /* background-color: red; */
+    width: 20vw;
+    margin-top: 1vw;
+    margin-left: 5vw;
+    height: 3.2vw;
+    display: flex;
+    gap: 0.5vw;
+}
+
+.agreeButton {
+    cursor: pointer;
+    background: rgba(106, 106, 106, 0.51);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    width: 10vw;
+    text-align: center;
+    line-height: 3vw;
+    font-family: Oswald;
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+#agreeDeleteButton {
+    font-family: Oswald;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(180deg, rgba(252, 132, 132, 0.74) 0%, rgba(252, 132, 132, 0) 160.75%), #6a6a6a;
+    border: 1px solid rgba(0, 0, 0, 0.33);
+}
+
+#agreeDeleteButton:hover {
+    background: linear-gradient(180deg, rgba(252, 132, 132, 0.874) 0%, rgba(252, 132, 132, 0) 160.75%), #6a6a6a;
+}
+
+#agreeCancelButton:hover {
+    background: rgba(106, 106, 106, 0.789);
+}
+
+.slotRedeemSection {
+    display: none;
+    z-index: 9879;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.53);
+}
+
+.slotRedeemMain {
+    position: absolute;
+    height: 12vw;
+    width: 30vw;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(180deg, rgba(147, 209, 125, 0.38) 0%, rgba(147, 209, 125, 0) 122.7%), rgba(51, 51, 51, 0.39);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0px 0px 158px rgba(105, 177, 80, 0.12);
+    /* backdrop-filter: blur(19px); */
+    margin-left: -15vw;
+    margin-top: -8vw;
+}
+
+.redeemTitleArea {
+    width: 85%;
+    margin-left: 7.5%;
+    height: 3vw;
+    margin-top: 1.2vw;
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: #77bc5f;
+}
+
+.redeemCodeText {
+    font-family: Oswald Light;
+    color: white;
+    font-weight: 400;
+}
+
+.redeemInput {
+    width: 85%;
+    height: 3.2vw;
+    padding-left: 1vw;
+    font-size: 0.7vw;
+    padding-right: 1vw;
+    margin-left: 7.5%;
+    background: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.47);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    font-family: "Oswald Light";
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.redeemButtonArea {
+    display: flex;
+    width: 85%;
+    margin-left: 7.5%;
+    /* background-color: red; */
+    height: 2.5vw;
+    margin-top: 0.5vw;
+    gap: 0.2vw;
+}
+
+.redeemButton {
+    cursor: pointer;
+    background: rgba(106, 106, 106, 0.51);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    width: 50%;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 2.4vw;
+    font-family: "Oswald";
+    color: rgba(255, 255, 255, 0.64);
+}
+
+#redeemAccept {
+    font-family: "Oswald";
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(180deg, rgba(147, 209, 125, 0.74) 0%, rgba(147, 209, 125, 0) 160.75%), #6a6a6a;
+    border: 1px solid rgba(0, 0, 0, 0.33);
+}
+
+.loadingSection {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 182738912;
+    background-image: url("/html/images/loadingBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+}
+
+.loadingCharInfoArea {
+    /* background-color: red; */
+    height: 4vw;
+    width: fit-content;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: auto;
+    margin-top: 1.8vw;
+    display: flex;
+}
+
+.loadingPPArea {
+    /* background-color: blue; */
+    width: 4vw;
+    height: 4vw;
+    border-radius: 10vw;
+    overflow: hidden;
+    /* border: 0.1333vw solid rgba(0, 0, 0, 0.161); */
+}
+
+.loadingPPArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.loadingCharName {
+    font-family: "Oswald";
+    font-size: 2.3vw;
+    line-height: 4vw;
+    margin-left: 1.3vw;
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+.loadingBar {
+    height: 5vw;
+    width: 5vw;
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 21vw;
+    /* display: inline-block; */
+    /* position: relative; */
+    /* width: 80px;
+    height: 80px; */
+}
+
+.loadingBar div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    border: 0.5vw solid #f04cff00;
+    border-radius: 100%;
+    animation: loadingBar 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #f04cff transparent transparent transparent;
+}
+.loadingBar div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.loadingBar div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.loadingBar div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes loadingBar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.charInfoText {
+    text-align: center;
+    font-family: "Oswald Light";
+    color: #f04cffa7;
+    text-shadow: 0px 0px 30px rgba(230, 219, 22, 0.1);
+
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}
+
+.loadingText {
+    text-align: center;
+    font-family: "Oswald Light";
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+
+    color: #ffffffcf;
+    margin-top: -0.3vw;
+    font-size: 1.8vw;
+}
+
+.loadingBottomArea {
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.28);
+    font-family: "Oswald Light";
+    margin-top: 20vw;
+}
+
+#infoIcon {
+    font-size: 1.2vw;
+}
+
+.pleaseWaitText {
+    font-size: 0.8vw;
+    margin-top: 0vw;
+    margin-left: 0.5vw;
+}
+
+#buyCodeButton {
+    font-size: 0.8vw;
+    background-color: #2525256f;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#buyCodeButton:hover {
+    background-color: #252525;
+}

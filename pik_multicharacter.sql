@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS `pik_multichar` (
+  `#` int(11) NOT NULL AUTO_INCREMENT,
+  `license` varchar(255) NOT NULL DEFAULT '0',
+  `charCount` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`#`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `pik_multichar_codes` (
+  `#` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`#`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
