@@ -9,3 +9,6 @@ USER-FRIENDLY UI
 
 <h1>Support Discord Server</h1>
 https://discord.gg/zarevstore
+
+<h1>Preview :</h1>
+<B>https://youtu.be/xLEvpOM-nXk</B>
