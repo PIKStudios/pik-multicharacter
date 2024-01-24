@@ -79,7 +79,7 @@ PIK.Translate = {
 PIK.MaxCharSlot = 2
 PIK.DefaultOpenCharSlot = 1
 
-PIK.UseQbApartments = true -- Default = false | If you want to use qb-apartaments set it to true
+PIK.UseQbApartments = false -- Default = false | If you want to use qb-apartaments set it to true
 
 PIK.Interior = vector3(406.74, -953.56, -99.0) -- Interior to load where characters are previewed
 PIK.DefaultSpawn = vector3(-1035.71, -2731.87, 12.86) -- Default spawn coords if you have start apartments disabled
