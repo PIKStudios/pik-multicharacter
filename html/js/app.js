@@ -8,7 +8,7 @@ $(document).ready(function () {
         if (event.data.action === "ui") {
             if (firstOpen) {
                 firstOpen = false;
-                $.post("https://pik-multicharacter/started");
+                $.post("https:///pik-multicharacter/started");
             }
             if (event.data.toggle) {
                 $(".loadingSection").fadeIn(300);
@@ -17,7 +17,7 @@ $(document).ready(function () {
                 tebexLink = event.data.tebexLink;
                 setupArea(maxCount, event.data.mySlotCount);
                 setTimeout(() => {
-                    $.post("https://pik-multicharacter/setupCharacters");
+                    $.post("https:///pik-multicharacter/setupCharacters");
                     setTimeout(() => {
                         $(".loadingSection").fadeOut(300);
                     }, 2000);
@@ -93,7 +93,7 @@ $(document).on("click", "#createButton", function () {
         var uniqueId = $(selectedDivId).attr("data-uniqueId");
         $("#createButtonX").attr("data-clickedUnique", uniqueId);
 
-        $.post("https://pik-multicharacter/cDataPed");
+        $.post("https:///pik-multicharacter/cDataPed");
         $(".charInfoRight").animate({ left: "30vw" }, 200);
         $(".charCreateRight").animate({ left: "30vw" }, 0);
         setTimeout(() => {
@@ -121,7 +121,7 @@ $(document).on("click", ".sexButton", function () {
 
     var sex = $(this).attr("data-sex");
     $.post(
-        "https://pik-multicharacter/cDataPed",
+        "https:///pik-multicharacter/cDataPed",
         JSON.stringify({
             sex: sex,
         })
@@ -143,7 +143,7 @@ $(document).on("click", "#redeemAccept", function () {
     if (input) {
         firstOpen = true;
         $.post(
-            "https://pik-multicharacter/sendInput",
+            "https:///pik-multicharacter/sendInput",
             JSON.stringify({
                 inputData: input,
             }),
@@ -215,7 +215,7 @@ $(document).on("click", ".charItem", function () {
     $("#agreeDeleteButton").attr("data-charInfo", stringInfo);
     $(".charNameAgreeText").html(charInfoParse.firstname + " " + charInfoParse.lastname);
     $.post(
-        "https://pik-multicharacter/cDataPed",
+        "https:///pik-multicharacter/cDataPed",
         JSON.stringify({
             cData: parseInfo.citizenid,
         })
@@ -234,7 +234,7 @@ $(document).on("click", "#clickablePlay", function () {
     var cid = $(selectedDivId).attr("data-cid");
 
     $.post(
-        "https://pik-multicharacter/selectCharacter",
+        "https:///pik-multicharacter/selectCharacter",
         JSON.stringify({
             cData: cid,
         })
@@ -258,13 +258,13 @@ $(document).on("click", "#agreeDeleteButton", function () {
     $(".loadingSection").fadeIn(300);
     firstOpen = true;
     $.post(
-        "https://pik-multicharacter/removeCharacter",
+        "https:///pik-multicharacter/removeCharacter",
         JSON.stringify({
             citizenid: parseInfo.citizenid,
         })
     );
     $(".agreeDeleteSection").fadeOut(100);
-    $.post("https://pik-multicharacter/refreshCharacters");
+    $.post("https:///pik-multicharacter/refreshCharacters");
     setTimeout(() => {
 
     }, 1000);
@@ -382,7 +382,7 @@ $(document).on("click", "#createButtonX", function () {
     }
 
     $.post(
-        "https://pik-multicharacter/createNewCharacter",
+        "https:///pik-multicharacter/createNewCharacter",
         JSON.stringify({
             firstname: firstname,
             lastname: lastname,

@@ -4,7 +4,7 @@
 -- 2: create a package on tebex.
 -- 3: Click game server commands at bottom and select your game server.
 -- 4: Click Add Command
--- 5: paste this code without "( )" (     purchase_multichar_slot {"transid": "{transaction}"}     )
+-- 5: paste this code without "( )" (     purchase_multichar_slot{"transid": "{transaction}"}     )
 -- 6: Click settings icon
 -- 7: Require Player To Be Online : SHOULD BE > Execute the command even if the player is offline
 

@@ -2,7 +2,7 @@ PIK = {}
 
 PIK.Framework = "qb" -- qb / oldqb | qb = export system | oldqb = triggerevent system
 PIK.Mysql = "oxmysql" -- Check fxmanifest.lua when you change it! | ghmattimysql / oxmysql / mysql-async
-PIK.tebexLink = "your-tebex-link.tebex.io"
+PIK.tebexLink = "https://pik-sutdios.tebex.io/category/script-testing"
 
 /* RO LANGUAGE | LIMBA ROMANA
 PIK.Translate = {
@@ -38,42 +38,6 @@ PIK.Translate = {
     loading = "SE INCARCA!",
     plsWait = "TE RUGAM SA ASTEPTI...",  
     doYouAgreeDelete = "ESTI SIGUR CA VREI SA STERGI ACEST CARACTER?",
-}
-
--- IDIOMA (ES) | ESPAÑOL
-PIK.Translate = {
-    title = "PIK",
-    character = "Personajes",
-    selector = "Seleccion",
-    firstDesc = "",
-    createCharacter = "Crear Personajer",
-    buySlot = "COMPRAR SLOT",
-    play = "JUGAR",
-    delete = "ELIMINAR",
-    male = "HOMBRE",
-    female = "MUJER",
-    dateOfBirth = "FECHA DE NACIMIENTO",
-    nationality = "NACIONALIDAD",
-    job = "TRABAJO",
-    cash = "EFECTIVO",
-    bank = "BANCO",
-    phoneNumber = "NUMERO DE TELEFONO",
-    accountNumber = "IBAN",
-    rightTitle1 = "CREAR",
-    rightTitle2 = "PERSONAJE",
-    rightDescription = "¡Crea un personaje! Rellena el formulario para empezar a jugar",
-    name = "NOMBRE",
-    surname = "APELLIDO",
-    create = "CREAR",
-    slot = "SLOT",
-    redeemCode = "CANJEAR CODIGO",
-    buyCode = "BUY CODE",
-    cancel = "CANCELAR",
-    accept = "ACEPTAR",
-    characterInfo = "INFORMACION DEL PERSONAJE",
-    loading = "CARGANDO!",
-    plsWait = "PORFAVOR ESPERA...",  
-    doYouAgreeDelete = "QUIERES ELIMINAR EL PERSONAJE ?",
 } */
 
 -- EN LANGUAGE | LIMBA ENGLEZA
@@ -115,7 +79,7 @@ PIK.Translate = {
 PIK.MaxCharSlot = 2
 PIK.DefaultOpenCharSlot = 1
 
-PIK.UseQbApartments = false -- Default = false | If you want to use qb-apartaments set it to true
+PIK.UseQbApartments = true -- Default = false | If you want to use qb-apartaments set it to true
 
 PIK.Interior = vector3(406.74, -953.56, -99.0) -- Interior to load where characters are previewed
 PIK.DefaultSpawn = vector3(-1035.71, -2731.87, 12.86) -- Default spawn coords if you have start apartments disabled

@@ -64,7 +64,7 @@ end)
 RegisterNetEvent('pik-multicharacter:server:deleteCharacter', function(citizenid)
     local src = source
     QBCore.Player.DeleteCharacter(src, citizenid)
-    TriggerClientEvent('QBCore:Notify', src, "CHAR DELETED" , "success")
+    TriggerClientEvent('QBCore:Notify', src, Lang:t("notifications.char_deleted") , "success")
 end)
 
 -- Callbacks

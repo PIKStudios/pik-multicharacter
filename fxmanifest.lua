@@ -1,3 +1,5 @@
+shared_script '@FiveEye/FiveEye.lua'
+
 fx_version 'cerulean'
 game 'gta5'
 
@@ -10,6 +12,7 @@ server_scripts {
 	'@oxmysql/lib/MySQL.lua',
 	'server/main.lua',
 	'server/open_server.lua',
+	'@qb-apartments/config.lua',
 }
 
 ui_page 'html/ui.html'
@@ -28,7 +31,8 @@ files {
 
 
 dependencies {
-    'qb-core'
+    'qb-core',
+	'qb-spawn'
 }
 
 escrow_ignore {
