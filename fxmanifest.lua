@@ -47,6 +47,7 @@ escrow_ignore {
 	
 	'client/main.lua',
 	'server/main.lua',
+	'server/version.lua',
 }  
 
 
