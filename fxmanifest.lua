@@ -15,6 +15,13 @@ server_scripts {
 
 ui_page 'html/ui.html'
 
+--[[ Resource Information ]]--
+name         'pik-multicharacter'
+author       'Panda'
+version      '1.2'
+license      'MIT'
+repository   'https://github.com/Pandaul/pik-multicharacter'
+description  'A multicharacter script with more features than the basicone. Framework: QB.'
 
 files {
 	'html/ui.html',
