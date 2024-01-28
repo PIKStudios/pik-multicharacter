@@ -12,3 +12,6 @@ https://discord.gg/zarevstore
 
 <h1>Preview :</h1>
 <B>https://youtu.be/xLEvpOM-nXk</B>
+
+<h1>Documentation :</h1>
+<b>https://pandascripts.gitbook.io/pandascripts-documentation/</b>
