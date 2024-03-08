@@ -34,7 +34,7 @@ RegisterNetEvent('pik-multicharacter:server:createCharacter', function(data)
             Wait(10)
         until hasDonePreloading[src]
         if PIK.UseQbApartments then 
-            if Apartments.Starting then
+            if Apartments.Starting == true then
                 local randbucket = (GetPlayerPed(src) .. math.random(1,999))
                 SetPlayerRoutingBucket(src, randbucket)
                 print('^2[qb-core]^7 '..GetPlayerName(src)..' has succesfully loaded!')
